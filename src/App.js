@@ -2,21 +2,20 @@ import { createUseStyles } from "react-jss";
 // import logo from './logo.svg'
 import ReadMe from "./ReadMe";
 import Header from "./Header";
-import StepsComponent from "./StepsComponent";
+import StepsComponent from "./StepsComponents/StepsComponent";
+import NavBar from "./NavBar";
 
 import { Switch, Route, Redirect } from "react-router-dom";
 
 const useStyles = createUseStyles((theme) => ({
   "@global body": {
-    background: theme.palette.background,
-    color: theme.palette.text,
     fontFamily: "sans-serif",
   },
 
   App: {
-    padding: "20px",
+    padding: "50px",
     background: theme.palette.primary,
-    maxWidth: "800px",
+    maxWidth: "100%",
     minHeight: "600px",
     margin: "auto",
     "& a": {
@@ -34,7 +33,7 @@ const useStyles = createUseStyles((theme) => ({
     background: theme.palette.secondary,
 
     "& canvas": {
-      width: "100%",
+      width: "20%",
       height: "auto",
     },
     "& video": {
@@ -70,6 +69,7 @@ function App(props) {
 
   return (
     <div className={classes.App}>
+      <NavBar />
       <Header classes={classes} />
       <Switch>
         <StepsComponent classes={classes} />

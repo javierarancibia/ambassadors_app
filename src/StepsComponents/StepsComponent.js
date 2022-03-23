@@ -1,6 +1,9 @@
 import { useState } from "react";
-import { useWebcamCapture } from "./useWebcamCapture";
-import logo from "./slap.png";
+import { useWebcamCapture } from "../useWebcamCapture";
+import FirstStep from "./FirstStep";
+import SecondStep from "./SecondStep";
+import ThirdStep from "./ThirdStep";
+import FourthStep from "./FourthStep";
 
 const StepsComponent = ({ classes }) => {
   // currently active sticker
@@ -15,28 +18,18 @@ const StepsComponent = ({ classes }) => {
     picture, // latest captured picture data object
   ] = useWebcamCapture(sticker?.img, title);
 
-  const stickers = [logo].map((url) => {
-    const img = document.createElement("img");
-    img.src = url;
-    return { img, url };
-  });
+  const handleTitle = (title) => {
+    setTitle(title);
+  };
+
+  const handleSticker = (sticker) => {
+    setSticker(sticker);
+  };
 
   return (
     <main>
-      <section className={classes.Gallery}>
-        Step one: Give it a name
-        <input
-          type="text"
-          value={title}
-          onChange={(ev) => setTitle(ev.target.value)}
-        />
-      </section>
-      <section className={classes.Stickers}>
-        Step 2: select your sticker...
-        <button onClick={() => setSticker(stickers[0])}>
-          <img src={stickers[0].url} />
-        </button>
-      </section>
+      <FirstStep classes={classes} handleTitle={handleTitle} />
+      <SecondStep classes={classes} handleSticker={handleSticker} />
       <section className={classes.Main}>
         Step three: Slap your self!
         <video ref={handleVideoRef} />
@@ -47,15 +40,7 @@ const StepsComponent = ({ classes }) => {
           onClick={handleCapture}
         />
       </section>
-      <section className={classes.Gallery}>
-        Step 4: Cherish this moment forever
-        {picture && (
-          <div className={classes.Picture}>
-            <img src={picture.dataUri} />
-            <h3>{picture.title}</h3>
-          </div>
-        )}
-      </section>
+      <FourthStep picture={picture} classes={classes} />
     </main>
   );
 };
