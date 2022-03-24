@@ -1,47 +1,65 @@
 import { useState } from "react";
-import { useWebcamCapture } from "../useWebcamCapture";
+import Header from "../Header";
 import FirstStep from "./FirstStep";
 import SecondStep from "./SecondStep";
 import ThirdStep from "./ThirdStep";
-import FourthStep from "./FourthStep";
+import { Container, Row, Col } from "react-bootstrap";
+// import image from "../images/selfie.png";
 
 const StepsComponent = ({ classes }) => {
-  // currently active sticker
   const [sticker, setSticker] = useState();
-  // title for the picture that will be captured
   const [title, setTitle] = useState("SLAPPE!");
-  // webcam behavior hook
-  const [
-    handleVideoRef, // callback function to set ref for invisible video element
-    handleCanvasRef, // callback function to set ref for main canvas element
-    handleCapture, // callback function to trigger taking the picture
-    picture, // latest captured picture data object
-  ] = useWebcamCapture(sticker?.img, title);
+  const [Ui, setUi] = useState("1");
 
-  const handleTitle = (title) => {
-    setTitle(title);
+  const obtainUi = (currentUi) => {
+    setUi(currentUi);
+    console.log(Ui);
+  };
+
+  const handleTitle = (name) => {
+    setTitle(name);
+    console.log(title);
   };
 
   const handleSticker = (sticker) => {
     setSticker(sticker);
+    console.log(sticker);
   };
 
   return (
-    <main>
-      <FirstStep classes={classes} handleTitle={handleTitle} />
-      <SecondStep classes={classes} handleSticker={handleSticker} />
-      <section className={classes.Main}>
-        Step three: Slap your self!
-        <video ref={handleVideoRef} />
-        <canvas
-          ref={handleCanvasRef}
-          width={2}
-          height={2}
-          onClick={handleCapture}
-        />
-      </section>
-      <FourthStep picture={picture} classes={classes} />
-    </main>
+    <Container>
+      {Ui === "1" && (
+        <Row>
+          <Col>
+            <Header classes={classes} />
+            <FirstStep
+              classes={classes}
+              handleTitle={handleTitle}
+              onGetUi={obtainUi}
+            />
+          </Col>
+          <Col>
+            <img
+              style={{ marginTop: "50rem" }}
+              src="images/selfie.png"
+              width="800"
+              height="360"
+              className="container mt-5 mx-auto d-block"
+            />
+          </Col>
+        </Row>
+      )}
+      {Ui === "2" && (
+        <Row>
+          <Col>
+            <SecondStep classes={classes} handleSticker={handleSticker} />
+          </Col>
+          <Col>
+            <ThirdStep classes={classes} sticker={sticker} title={title} />
+          </Col>
+        </Row>
+      )}
+    </Container>
   );
 };
 

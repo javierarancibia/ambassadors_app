@@ -7,7 +7,7 @@ const FourthStep = ({ classes, picture }) => {
       {picture && (
         <div className={classes.Picture}>
           <img src={picture.dataUri} />
-          <h3>{picture.title}</h3>
+          <h3 style={{ color: "white" }}>{picture.title}</h3>
         </div>
       )}
     </section>

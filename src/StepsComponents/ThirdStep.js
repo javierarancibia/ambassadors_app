@@ -1,8 +1,7 @@
 import { useWebcamCapture } from "../useWebcamCapture";
-import { useEffect } from "react";
+import FourthStep from "./FourthStep";
 
-const ThirdStep = ({ classes, sticker, title, handlePicture }) => {
-  // webcam behavior hook
+const ThirdStep = ({ classes, sticker, title }) => {
   const [
     handleVideoRef, // callback function to set ref for invisible video element
     handleCanvasRef, // callback function to set ref for main canvas element
@@ -10,20 +9,20 @@ const ThirdStep = ({ classes, sticker, title, handlePicture }) => {
     picture, // latest captured picture data object
   ] = useWebcamCapture(sticker?.img, title);
 
-  useEffect(() => {
-    handlePicture(picture);
-  }, [picture]);
   return (
-    <section className={classes.Main}>
-      Step three: Slap your self!
-      <video ref={handleVideoRef} />
-      <canvas
-        ref={handleCanvasRef}
-        width={2}
-        height={2}
-        onClick={handleCapture}
-      />
-    </section>
+    <div>
+      <h2 style={{ color: "white" }}>Step three: Slap your self!</h2>
+      <section className={classes.Main}>
+        <video ref={handleVideoRef} />
+        <canvas
+          ref={handleCanvasRef}
+          width={2}
+          height={2}
+          onClick={handleCapture}
+        />
+        <FourthStep picture={picture} classes={classes} />
+      </section>
+    </div>
   );
 };
 

@@ -1,39 +1,39 @@
 import { createUseStyles } from "react-jss";
 // import logo from './logo.svg'
 import ReadMe from "./ReadMe";
-import Header from "./Header";
 import StepsComponent from "./StepsComponents/StepsComponent";
 import NavBar from "./NavBar";
+import { Container } from "react-bootstrap";
 
 import { Switch, Route, Redirect } from "react-router-dom";
 
 const useStyles = createUseStyles((theme) => ({
   "@global body": {
-    fontFamily: "sans-serif",
+    fontFamily: "Raleway",
+    backgroundColor: theme.palette.primary,
   },
 
   App: {
-    padding: "50px",
     background: theme.palette.primary,
-    maxWidth: "100%",
+    maxWidth: "180%",
     minHeight: "600px",
-    margin: "auto",
     "& a": {
       color: theme.palette.text,
     },
   },
   Header: {
     "&  h1": {
-      fontFamily: "sans-serif",
+      fontFamily: "Raleway",
       cursor: "pointer",
       fontSize: "4rem",
+      marginTop: "8rem",
     },
   },
   Main: {
     background: theme.palette.secondary,
 
     "& canvas": {
-      width: "20%",
+      width: "100%",
       height: "auto",
     },
     "& video": {
@@ -51,7 +51,7 @@ const useStyles = createUseStyles((theme) => ({
     },
   },
   Picture: {
-    background: "black",
+    background: "white",
     padding: 4,
     position: "relative",
     display: "inline-block",
@@ -68,18 +68,18 @@ function App(props) {
   const classes = useStyles(props);
 
   return (
-    <div className={classes.App}>
+    <Container className={classes.App}>
       <NavBar />
-      <Header classes={classes} />
       <Switch>
-        <StepsComponent classes={classes} />
-        <Route path="/" exact></Route>
+        <Route path="/" exact>
+          <StepsComponent classes={classes} />
+        </Route>
         <Route path="/readme">
           <ReadMe />
         </Route>
         <Redirect to="/" />
       </Switch>
-    </div>
+    </Container>
   );
 }
 
