@@ -1,5 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const FourthStep = ({ classes, picture }) => {
   const dispatch = useDispatch();
@@ -17,8 +21,18 @@ const FourthStep = ({ classes, picture }) => {
       <section className={classes.Gallery}>
         {picture && (
           <div className={classes.Picture}>
-            <img src={picture.dataUri} />
-            <h3 style={{ color: "black" }}>{picture.title}</h3>
+            <img
+              src={picture.dataUri}
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+            <h3
+              style={{ color: "black" }}
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              {picture.title}
+            </h3>
           </div>
         )}
       </section>

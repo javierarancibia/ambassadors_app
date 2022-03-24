@@ -1,6 +1,10 @@
 import { useWebcamCapture } from "../useWebcamCapture";
 import FourthStep from "./FourthStep";
 import { useDispatch } from "react-redux";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const ThirdStep = ({ classes, sticker, title }) => {
   const [
@@ -22,12 +26,19 @@ const ThirdStep = ({ classes, sticker, title }) => {
         </h1>
       </header>
       <section className={classes.Main} style={{ borderRadius: "45px" }}>
-        <video ref={handleVideoRef} style={{ borderRadius: "45px" }} />
+        <video
+          ref={handleVideoRef}
+          style={{ borderRadius: "45px" }}
+          data-aos="fade-left"
+          data-aos-duration="4000"
+        />
         <canvas
           ref={handleCanvasRef}
           // width={2}
           // height={2}
           onClick={handleCapture}
+          data-aos="fade-left"
+          data-aos-duration="4000"
         />
         <div className="mt-5">
           <FourthStep picture={picture} classes={classes} />

@@ -15,6 +15,11 @@ import logo14 from "./images/pc.png";
 import logo15 from "./images/boy2.png";
 import logo16 from "./images/watermelon2.png";
 import { Container, Row, Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const SecondStep = ({ classes, handleSticker }) => {
   const imagesArray = [
@@ -52,16 +57,22 @@ const SecondStep = ({ classes, handleSticker }) => {
       <header style={{ color: "black" }} className={classes.Header}>
         <h1
           style={{ fontSize: "5rem", fontWeight: "normal", marginTop: "3rem" }}
+          data-aos="fade-right"
+          data-aos-duration="2000"
         >
           Choose-A-<span style={{ color: "red" }}>S</span>ticker
         </h1>
-        <p style={{ fontFamily: "Raleway" }}>
+        <p
+          style={{ fontFamily: "Raleway" }}
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           Have you ever said something so dumb, you just wanted to slap
           yourself? Well now you can!
         </p>
       </header>
       <section className={classes.Stickers}>
-        <Row>
+        <Row data-aos="fade-right" data-aos-duration="2000">
           {stickers &&
             stickers.map((item) => (
               <Col xs="12" sm="3" style={{ padding: "2px" }}>
