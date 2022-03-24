@@ -1,11 +1,13 @@
-import logo from "./images/slap.png";
+import logo from "./images/cat.png";
 import logo2 from "./images/cat.png";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import IMAGES from "../Images";
+import logo3 from "./images/cat.png";
+import logo4 from "./images/cat.png";
+import logo5 from "./images/cat.png";
+import logo6 from "./images/cat.png";
+import { Container, Row, Col } from "react-bootstrap";
 
 const SecondStep = ({ classes, handleSticker }) => {
-  const imagesArray = [logo, logo2];
+  const imagesArray = [logo, logo2, logo3, logo4, logo5, logo6];
   const stickers = imagesArray.map((url) => {
     const img = document.createElement("img");
     img.src = url;
@@ -13,17 +15,24 @@ const SecondStep = ({ classes, handleSticker }) => {
   });
 
   return (
-    <div>
+    <Container>
       <h2 style={{ color: "white" }}>Step 2: select your sticker...</h2>
       <section className={classes.Stickers}>
-        {stickers &&
-          stickers.map((item) => (
-            <button onClick={() => handleSticker(item)}>
-              <img src={item.url} />
-            </button>
-          ))}
+        <Row>
+          {stickers &&
+            stickers.map((item) => (
+              <Col xs="12" sm="4">
+                <input
+                  type="image"
+                  src={item.url}
+                  onClick={() => handleSticker(item)}
+                  width="80%"
+                />
+              </Col>
+            ))}
+        </Row>
       </section>
-    </div>
+    </Container>
   );
 };
 

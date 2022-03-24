@@ -1,5 +1,6 @@
 import { useWebcamCapture } from "../useWebcamCapture";
 import FourthStep from "./FourthStep";
+import { useDispatch } from "react-redux";
 
 const ThirdStep = ({ classes, sticker, title }) => {
   const [
@@ -9,6 +10,8 @@ const ThirdStep = ({ classes, sticker, title }) => {
     picture, // latest captured picture data object
   ] = useWebcamCapture(sticker?.img, title);
 
+  const dispatch = useDispatch();
+
   return (
     <div>
       <h2 style={{ color: "white" }}>Step three: Slap your self!</h2>
@@ -16,11 +19,13 @@ const ThirdStep = ({ classes, sticker, title }) => {
         <video ref={handleVideoRef} />
         <canvas
           ref={handleCanvasRef}
-          width={2}
-          height={2}
+          // width={2}
+          // height={2}
           onClick={handleCapture}
         />
-        <FourthStep picture={picture} classes={classes} />
+        <div className="mt-5">
+          <FourthStep picture={picture} classes={classes} />
+        </div>
       </section>
     </div>
   );

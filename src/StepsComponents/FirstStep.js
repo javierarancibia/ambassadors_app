@@ -15,10 +15,9 @@ const FirstStep = ({ classes, handleTitle, onGetUi }) => {
       <div>
         <input
           className="mb-3 mt-3 h5"
-          style={{ color: "#0085FF" }}
+          style={{ color: "#0085FF", padding: "1rem", borderRadius: "25px" }}
           placeholder="Step one: Give it a name"
           type="text"
-          // value={title}
           onChange={(ev) => getTitle(ev.target.value)}
         />
       </div>
@@ -26,7 +25,7 @@ const FirstStep = ({ classes, handleTitle, onGetUi }) => {
         <Button
           onClick={handleUi}
           value="2"
-          style={{ borderRadius: "20px", padding: "1rem" }}
+          style={{ borderRadius: "45px", padding: "0.7rem 3rem 0.7rem 3rem" }}
         >
           Insert a name
         </Button>

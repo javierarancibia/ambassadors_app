@@ -8,15 +8,15 @@ import { Container } from "react-bootstrap";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 const useStyles = createUseStyles((theme) => ({
-  "@global body": {
+  body: {
     fontFamily: "Raleway",
     backgroundColor: theme.palette.primary,
   },
 
   App: {
     background: theme.palette.primary,
-    maxWidth: "180%",
-    minHeight: "600px",
+    maxWidth: "100%",
+    minHeight: "100%",
     "& a": {
       color: theme.palette.text,
     },
@@ -68,7 +68,7 @@ function App(props) {
   const classes = useStyles(props);
 
   return (
-    <Container className={classes.App}>
+    <Container fluid className={classes.App}>
       <NavBar />
       <Switch>
         <Route path="/" exact>
