@@ -33,8 +33,11 @@ const useStyles = createUseStyles((theme) => ({
     background: theme.palette.secondary,
 
     "& canvas": {
-      width: "100%",
+      width: "75%",
       height: "auto",
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
     },
     "& video": {
       display: "none",
@@ -48,13 +51,17 @@ const useStyles = createUseStyles((theme) => ({
   Gallery: {
     "& img": {
       height: "16rem",
+      display: "block",
+      marginLeft: "auto",
+      marginRight: "auto",
     },
   },
   Picture: {
     background: "white",
     padding: 4,
     position: "relative",
-    display: "inline-block",
+    display: "block",
+    borderRadius: "50%",
     "& h3": {
       padding: 8,
       textAlign: "center",

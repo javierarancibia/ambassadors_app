@@ -28,7 +28,15 @@ const StepsComponent = ({ classes }) => {
   };
 
   return (
-    <Container>
+    <Container
+      style={{
+        backgroundColor: "#191D21",
+        height: "auto !important",
+        minHeight: "100%",
+        paddingBottom: "5rem",
+        borderRadius: "45px",
+      }}
+    >
       {Ui === "1" && (
         <div>
           <Row>
@@ -65,7 +73,7 @@ const StepsComponent = ({ classes }) => {
         </div>
       )}
       {Ui === "2" && (
-        <Row>
+        <Row style={{ backgroundColor: "white", paddingBottom: "5rem" }}>
           <Col>
             <SecondStep classes={classes} handleSticker={handleSticker} />
           </Col>

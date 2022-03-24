@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { BsFillCameraFill } from "react-icons/bs";
+import logo from "./StepsComponents/images/camera.png";
 const NavBar = () => {
   return (
     <Navbar variant="dark">
       <Container>
         <Navbar.Brand href="#home">
-          <BsFillCameraFill style={{ fontSize: 50, color: "white" }} />
+          <img src={logo} width="60" />
         </Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link>

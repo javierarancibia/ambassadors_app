@@ -6,15 +6,17 @@ const FourthStep = ({ classes, picture }) => {
   const images = useSelector((state) => state.images);
 
   return (
-    <section className={classes.Gallery}>
-      Step 4: Cherish this moment forever
-      {picture && (
-        <div className={classes.Picture}>
-          <img src={picture.dataUri} />
-          <h3 style={{ color: "black" }}>{picture.title}</h3>
-        </div>
-      )}
-    </section>
+    <div>
+      <h2>Step 4: Cherish this moment forever</h2>
+      <section className={classes.Gallery}>
+        {picture && (
+          <div className={classes.Picture}>
+            <img src={picture.dataUri} />
+            <h3 style={{ color: "black" }}>{picture.title}</h3>
+          </div>
+        )}
+      </section>
+    </div>
   );
 };
 export default FourthStep;
