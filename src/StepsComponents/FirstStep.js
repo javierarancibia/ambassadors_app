@@ -1,4 +1,8 @@
 import { Button } from "react-bootstrap";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const FirstStep = ({ classes, handleTitle, onGetUi }) => {
   const handleUi = (e) => {
@@ -19,6 +23,8 @@ const FirstStep = ({ classes, handleTitle, onGetUi }) => {
           placeholder="Step one: Give it a name"
           type="text"
           onChange={(ev) => getTitle(ev.target.value)}
+          data-aos="fade-right"
+          data-aos-duration="2000"
         />
       </div>
       <div className="mt-3">
@@ -26,6 +32,8 @@ const FirstStep = ({ classes, handleTitle, onGetUi }) => {
           onClick={handleUi}
           value="2"
           style={{ borderRadius: "45px", padding: "0.7rem 3rem 0.7rem 3rem" }}
+          data-aos="fade-right"
+          data-aos-duration="2000"
         >
           Insert a name
         </Button>

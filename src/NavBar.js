@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { BsFillCameraFill } from "react-icons/bs";
 import logo from "./StepsComponents/images/camera.png";
 const NavBar = () => {
   return (
@@ -9,9 +8,20 @@ const NavBar = () => {
         <Navbar.Brand href="#home">
           <img src={logo} width="60" />
         </Navbar.Brand>
-        <Nav className="me-auto">
+        <Nav
+          className="me-auto"
+          style={{
+            fontFamily: "Raleway",
+            fontWeight: "bold",
+            fontSize: "18px",
+          }}
+        >
           <Nav.Link>
-            <Link to="/" className="text-decoration-none">
+            <Link
+              to="/"
+              className="text-decoration-none"
+              style={{ fontFamily: "Raleway", fontWeight: "bold" }}
+            >
               home
             </Link>
           </Nav.Link>

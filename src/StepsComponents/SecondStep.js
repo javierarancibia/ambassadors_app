@@ -8,12 +8,12 @@ import logo7 from "./images/woman.png";
 import logo8 from "./images/cactus.png";
 import logo9 from "./images/cam.png";
 import logo10 from "./images/banana.png";
-import logo11 from "./images/cactus.png";
-import logo12 from "./images/cactus.png";
-import logo13 from "./images/cactus.png";
-import logo14 from "./images/cactus.png";
-import logo15 from "./images/cactus.png";
-import logo16 from "./images/cactus.png";
+import logo11 from "./images/bird2.png";
+import logo12 from "./images/girl.png";
+import logo13 from "./images/boy.png";
+import logo14 from "./images/pc.png";
+import logo15 from "./images/boy2.png";
+import logo16 from "./images/watermelon2.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const SecondStep = ({ classes, handleSticker }) => {

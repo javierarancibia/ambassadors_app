@@ -33,7 +33,7 @@ const useStyles = createUseStyles((theme) => ({
     background: theme.palette.secondary,
 
     "& canvas": {
-      width: "75%",
+      width: "80%",
       height: "auto",
       display: "block",
       marginLeft: "auto",

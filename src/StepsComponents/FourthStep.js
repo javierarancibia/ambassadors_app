@@ -7,7 +7,13 @@ const FourthStep = ({ classes, picture }) => {
 
   return (
     <div>
-      <h2>Step 4: Cherish this moment forever</h2>
+      <header style={{ color: "black" }} className={classes.Header}>
+        <h1
+          style={{ fontSize: "2rem", fontWeight: "normal", marginTop: "3rem" }}
+        >
+          Choose-A-<span style={{ color: "red" }}>S</span>ticker
+        </h1>
+      </header>
       <section className={classes.Gallery}>
         {picture && (
           <div className={classes.Picture}>

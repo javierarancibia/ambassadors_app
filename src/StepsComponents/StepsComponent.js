@@ -5,7 +5,10 @@ import SecondStep from "./SecondStep";
 import ThirdStep from "./ThirdStep";
 import Instructions from "../Instructions";
 import { Container, Row, Col } from "react-bootstrap";
-// import image from "../images/selfie.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const StepsComponent = ({ classes }) => {
   const [sticker, setSticker] = useState();
@@ -55,13 +58,15 @@ const StepsComponent = ({ classes }) => {
                 width="800"
                 height="360"
                 className="container mt-5 mx-auto d-block"
+                data-aos="fade-left"
+                data-aos-duration="2000"
               />
             </Col>
           </Row>
           <div
             style={{
               backgroundColor: "#191D21",
-              marginTop: "5rem",
+              marginTop: "10rem",
               borderRadius: "45px 45px 0px 0px",
               paddingBottom: "18rem",
               borderColor: "white",

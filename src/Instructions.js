@@ -1,18 +1,29 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Instructions = () => {
   return (
-    <Row className="mt-5 text-white">
+    <Row className="mt-5 text-grey">
       <Col className="text-center">
-        <h3>sdash</h3>
-        <p c>
+        <h3 data-aos="fade-up" data-aos-duration="2000">
+          sdash
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="2000">
           Lorem ipsum dolor sit amet orem ipsum dolor sit ametorem ipsum dolor
           sit amet
         </p>
       </Col>
       <Col className="text-center">
-        <h3>sdash</h3>
+        <h3 data-aos="fade-up" data-aos-duration="2000">
+          sdash
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="2000">
+          Lorem ipsum dolor sit amet orem ipsum dolor sit ametorem ipsum dolor
+          sit amet
+        </p>
       </Col>
       <Col className="text-center">
         {/* <img

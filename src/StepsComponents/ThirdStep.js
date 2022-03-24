@@ -14,7 +14,13 @@ const ThirdStep = ({ classes, sticker, title }) => {
 
   return (
     <div>
-      <h2 style={{ color: "BLACK" }}>Step three: Slap your self!</h2>
+      <header style={{ color: "black" }} className={classes.Header}>
+        <h1
+          style={{ fontSize: "2rem", fontWeight: "normal", marginTop: "3rem" }}
+        >
+          Choose-A-<span style={{ color: "red" }}>S</span>ticker
+        </h1>
+      </header>
       <section className={classes.Main} style={{ borderRadius: "45px" }}>
         <video ref={handleVideoRef} style={{ borderRadius: "45px" }} />
         <canvas
