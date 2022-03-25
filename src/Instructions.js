@@ -6,9 +6,13 @@ AOS.init();
 
 const Instructions = () => {
   return (
-    <Row className="mt-5 text-grey">
+    <Row className="mt-5" style={{ color: "#B0B0B0", fontFamily: "Raleway" }}>
       <Col className="text-center">
-        <h3 data-aos="fade-up" data-aos-duration="2000">
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          style={{ fontWeight: "bold" }}
+        >
           sdash
         </h3>
         <p data-aos="fade-up" data-aos-duration="2000">
@@ -17,7 +21,11 @@ const Instructions = () => {
         </p>
       </Col>
       <Col className="text-center">
-        <h3 data-aos="fade-up" data-aos-duration="2000">
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          style={{ fontWeight: "bold" }}
+        >
           sdash
         </h3>
         <p data-aos="fade-up" data-aos-duration="2000">
@@ -32,7 +40,17 @@ const Instructions = () => {
           height="70%"
           className="container mt-5 mx-auto d-block"
         /> */}
-        <h3>sdash</h3>
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          style={{ fontWeight: "bold" }}
+        >
+          sdash
+        </h3>
+        <p data-aos="fade-up" data-aos-duration="2000">
+          Lorem ipsum dolor sit amet orem ipsum dolor sit ametorem ipsum dolor
+          sit amet
+        </p>
       </Col>
     </Row>
   );

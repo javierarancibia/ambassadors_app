@@ -15,7 +15,6 @@ import logo14 from "./images/pc.png";
 import logo15 from "./images/boy2.png";
 import logo16 from "./images/watermelon2.png";
 import { Container, Row, Col } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
