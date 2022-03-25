@@ -10,13 +10,14 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-const StepsComponent = ({ classes }) => {
+const StepsComponent = ({ classes, getUi }) => {
   const [sticker, setSticker] = useState();
   const [title, setTitle] = useState("SLAPPE!");
   const [Ui, setUi] = useState("1");
 
   const obtainUi = (currentUi) => {
     setUi(currentUi);
+    getUi(currentUi);
     console.log(Ui);
   };
 
@@ -78,11 +79,15 @@ const StepsComponent = ({ classes }) => {
         </div>
       )}
       {Ui === "2" && (
-        <Row style={{ backgroundColor: "white", paddingBottom: "5rem" }}>
+        <Row>
           <Col>
             <SecondStep classes={classes} handleSticker={handleSticker} />
           </Col>
-          <Col>
+          <Col
+            style={{ backgroundColor: "#191D21", borderRadius: "45px" }}
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <ThirdStep classes={classes} sticker={sticker} title={title} />
           </Col>
         </Row>

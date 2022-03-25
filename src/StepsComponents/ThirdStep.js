@@ -18,17 +18,21 @@ const ThirdStep = ({ classes, sticker, title }) => {
 
   return (
     <div>
-      <header style={{ color: "black" }} className={classes.Header}>
+      <header style={{ color: "white" }} className={classes.Header}>
         <h1
           style={{ fontSize: "2rem", fontWeight: "normal", marginTop: "3rem" }}
+          className="text-center"
         >
-          Choose-A-<span style={{ color: "red" }}>S</span>ticker
+          Sla<span style={{ color: "red" }}>p</span> Yourself!
         </h1>
       </header>
-      <section className={classes.Main} style={{ borderRadius: "45px" }}>
+      <section
+        className={classes.Main}
+        style={{ borderRadius: "45px", paddingTop: "2rem" }}
+      >
         <video
           ref={handleVideoRef}
-          style={{ borderRadius: "45px" }}
+          style={{ borderRadius: "45px", paddingTop: "5rem" }}
           data-aos="fade-left"
           data-aos-duration="4000"
         />

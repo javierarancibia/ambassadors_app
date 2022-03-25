@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-// import logo from './logo.svg'
+import { useState } from "react";
 import ReadMe from "./ReadMe";
 import StepsComponent from "./StepsComponents/StepsComponent";
 import NavBar from "./NavBar";
@@ -30,7 +30,8 @@ const useStyles = createUseStyles((theme) => ({
     },
   },
   Main: {
-    background: theme.palette.secondary,
+    background: "#191D21",
+    borderRadius: "45px",
 
     "& canvas": {
       width: "80%",
@@ -38,6 +39,7 @@ const useStyles = createUseStyles((theme) => ({
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",
+      borderRadius: "55px",
     },
     "& video": {
       display: "none",
@@ -45,7 +47,10 @@ const useStyles = createUseStyles((theme) => ({
   },
   Stickers: {
     "& img": {
-      height: "4rem",
+      height: "2rem",
+      hover: {
+        transform: "scale(1.5)",
+      },
     },
   },
   Gallery: {
@@ -54,14 +59,16 @@ const useStyles = createUseStyles((theme) => ({
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",
+      borderRadius: "55px",
+      marginTop: "2rem",
     },
   },
   Picture: {
-    background: "white",
+    background: "#191D21",
     padding: 4,
     position: "relative",
     display: "block",
-    borderRadius: "50%",
+    borderRadius: "50px",
     "& h3": {
       padding: 8,
       textAlign: "center",
@@ -74,12 +81,18 @@ function App(props) {
   // css classes from JSS hook
   const classes = useStyles(props);
 
+  const [UiNumber, setUiNumber] = useState();
+  const getUi = (Ui) => {
+    setUiNumber(Ui);
+    console.log(Ui);
+  };
+
   return (
     <Container fluid className={classes.App}>
       <NavBar />
       <Switch>
         <Route path="/" exact>
-          <StepsComponent classes={classes} />
+          <StepsComponent classes={classes} getUi={getUi} />
         </Route>
         <Route path="/readme">
           <ReadMe />

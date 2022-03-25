@@ -11,11 +11,14 @@ const FourthStep = ({ classes, picture }) => {
 
   return (
     <div>
-      <header style={{ color: "black" }} className={classes.Header}>
+      <header style={{ color: "white" }} className={classes.Header}>
         <h1
           style={{ fontSize: "2rem", fontWeight: "normal", marginTop: "3rem" }}
+          className="text-center"
         >
-          Choose-A-<span style={{ color: "red" }}>S</span>ticker
+          <span style={{ color: "red" }}>C</span>herish this moment
+          <span style={{ color: "red" }}> F</span>
+          orever
         </h1>
       </header>
       <section className={classes.Gallery}>
@@ -27,7 +30,7 @@ const FourthStep = ({ classes, picture }) => {
               data-aos-duration="1000"
             />
             <h3
-              style={{ color: "black" }}
+              style={{ color: "blue" }}
               data-aos="fade-left"
               data-aos-duration="1000"
             >

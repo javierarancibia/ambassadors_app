@@ -48,12 +48,12 @@ const SecondStep = ({ classes, handleSticker }) => {
   return (
     <Container
       style={{
-        backgroundColor: "white",
+        backgroundColor: "#191D21",
         borderRadius: "45px",
         paddingBottom: "3rem",
       }}
     >
-      <header style={{ color: "black" }} className={classes.Header}>
+      <header style={{ color: "white" }} className={classes.Header}>
         <h1
           style={{ fontSize: "5rem", fontWeight: "normal", marginTop: "3rem" }}
           data-aos="fade-right"

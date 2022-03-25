@@ -13,7 +13,7 @@ const Instructions = () => {
           data-aos-duration="2000"
           style={{ fontWeight: "bold" }}
         >
-          sdash
+          First Step
         </h3>
         <p data-aos="fade-up" data-aos-duration="2000">
           Lorem ipsum dolor sit amet orem ipsum dolor sit ametorem ipsum dolor
@@ -26,7 +26,7 @@ const Instructions = () => {
           data-aos-duration="2000"
           style={{ fontWeight: "bold" }}
         >
-          sdash
+          Second Step
         </h3>
         <p data-aos="fade-up" data-aos-duration="2000">
           Lorem ipsum dolor sit amet orem ipsum dolor sit ametorem ipsum dolor
@@ -45,7 +45,7 @@ const Instructions = () => {
           data-aos-duration="2000"
           style={{ fontWeight: "bold" }}
         >
-          sdash
+          Third Step
         </h3>
         <p data-aos="fade-up" data-aos-duration="2000">
           Lorem ipsum dolor sit amet orem ipsum dolor sit ametorem ipsum dolor
