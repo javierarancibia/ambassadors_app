@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/ambassadors_app/static/js/main.b41f9c89.chunk.js",
-    "main.js.map": "/ambassadors_app/static/js/main.b41f9c89.chunk.js.map",
+    "main.js": "/ambassadors_app/static/js/main.b018a78b.chunk.js",
+    "main.js.map": "/ambassadors_app/static/js/main.b018a78b.chunk.js.map",
     "runtime-main.js": "/ambassadors_app/static/js/runtime-main.88308532.js",
     "runtime-main.js.map": "/ambassadors_app/static/js/runtime-main.88308532.js.map",
     "static/css/2.6186f9e7.chunk.css": "/ambassadors_app/static/css/2.6186f9e7.chunk.css",
-    "static/js/2.af2e5065.chunk.js": "/ambassadors_app/static/js/2.af2e5065.chunk.js",
-    "static/js/2.af2e5065.chunk.js.map": "/ambassadors_app/static/js/2.af2e5065.chunk.js.map",
+    "static/js/2.57e34386.chunk.js": "/ambassadors_app/static/js/2.57e34386.chunk.js",
+    "static/js/2.57e34386.chunk.js.map": "/ambassadors_app/static/js/2.57e34386.chunk.js.map",
     "static/js/3.f5e1e8d7.chunk.js": "/ambassadors_app/static/js/3.f5e1e8d7.chunk.js",
     "static/js/3.f5e1e8d7.chunk.js.map": "/ambassadors_app/static/js/3.f5e1e8d7.chunk.js.map",
     "index.html": "/ambassadors_app/index.html",
     "static/css/2.6186f9e7.chunk.css.map": "/ambassadors_app/static/css/2.6186f9e7.chunk.css.map",
-    "static/js/2.af2e5065.chunk.js.LICENSE.txt": "/ambassadors_app/static/js/2.af2e5065.chunk.js.LICENSE.txt",
+    "static/js/2.57e34386.chunk.js.LICENSE.txt": "/ambassadors_app/static/js/2.57e34386.chunk.js.LICENSE.txt",
     "static/media/banana.78c41fca.png": "/ambassadors_app/static/media/banana.78c41fca.png",
     "static/media/bird.9ddc1aa7.png": "/ambassadors_app/static/media/bird.9ddc1aa7.png",
     "static/media/bird2.bd8f6211.png": "/ambassadors_app/static/media/bird2.bd8f6211.png",
@@ -24,6 +24,8 @@
     "static/media/eye.f473af7e.png": "/ambassadors_app/static/media/eye.f473af7e.png",
     "static/media/girl.91674359.png": "/ambassadors_app/static/media/girl.91674359.png",
     "static/media/pc.ceefe4a4.png": "/ambassadors_app/static/media/pc.ceefe4a4.png",
+    "static/media/read1.6d86bf0f.gif": "/ambassadors_app/static/media/read1.6d86bf0f.gif",
+    "static/media/read2.84ffaa88.gif": "/ambassadors_app/static/media/read2.84ffaa88.gif",
     "static/media/selfie.ec30b725.png": "/ambassadors_app/static/media/selfie.ec30b725.png",
     "static/media/slap.5f0cd602.png": "/ambassadors_app/static/media/slap.5f0cd602.png",
     "static/media/slap.e8c18156.gif": "/ambassadors_app/static/media/slap.e8c18156.gif",
@@ -35,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.88308532.js",
     "static/css/2.6186f9e7.chunk.css",
-    "static/js/2.af2e5065.chunk.js",
-    "static/js/main.b41f9c89.chunk.js"
+    "static/js/2.57e34386.chunk.js",
+    "static/js/main.b018a78b.chunk.js"
   ]
 }
