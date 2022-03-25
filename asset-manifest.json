@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.js": "/ambassadors_app/static/js/main.88e4cb20.chunk.js",
+    "main.js.map": "/ambassadors_app/static/js/main.88e4cb20.chunk.js.map",
+    "runtime-main.js": "/ambassadors_app/static/js/runtime-main.88308532.js",
+    "runtime-main.js.map": "/ambassadors_app/static/js/runtime-main.88308532.js.map",
+    "static/css/2.6186f9e7.chunk.css": "/ambassadors_app/static/css/2.6186f9e7.chunk.css",
+    "static/js/2.af2e5065.chunk.js": "/ambassadors_app/static/js/2.af2e5065.chunk.js",
+    "static/js/2.af2e5065.chunk.js.map": "/ambassadors_app/static/js/2.af2e5065.chunk.js.map",
+    "static/js/3.f5e1e8d7.chunk.js": "/ambassadors_app/static/js/3.f5e1e8d7.chunk.js",
+    "static/js/3.f5e1e8d7.chunk.js.map": "/ambassadors_app/static/js/3.f5e1e8d7.chunk.js.map",
+    "index.html": "/ambassadors_app/index.html",
+    "static/css/2.6186f9e7.chunk.css.map": "/ambassadors_app/static/css/2.6186f9e7.chunk.css.map",
+    "static/js/2.af2e5065.chunk.js.LICENSE.txt": "/ambassadors_app/static/js/2.af2e5065.chunk.js.LICENSE.txt",
+    "static/media/banana.78c41fca.png": "/ambassadors_app/static/media/banana.78c41fca.png",
+    "static/media/bird.9ddc1aa7.png": "/ambassadors_app/static/media/bird.9ddc1aa7.png",
+    "static/media/bird2.bd8f6211.png": "/ambassadors_app/static/media/bird2.bd8f6211.png",
+    "static/media/boy.73984851.png": "/ambassadors_app/static/media/boy.73984851.png",
+    "static/media/boy2.8c4a00f2.png": "/ambassadors_app/static/media/boy2.8c4a00f2.png",
+    "static/media/cactus.1c9a69a9.png": "/ambassadors_app/static/media/cactus.1c9a69a9.png",
+    "static/media/cam.ac46009b.png": "/ambassadors_app/static/media/cam.ac46009b.png",
+    "static/media/camera.772d6f0d.png": "/ambassadors_app/static/media/camera.772d6f0d.png",
+    "static/media/cell.175ad6bd.png": "/ambassadors_app/static/media/cell.175ad6bd.png",
+    "static/media/eye.f473af7e.png": "/ambassadors_app/static/media/eye.f473af7e.png",
+    "static/media/girl.91674359.png": "/ambassadors_app/static/media/girl.91674359.png",
+    "static/media/pc.ceefe4a4.png": "/ambassadors_app/static/media/pc.ceefe4a4.png",
+    "static/media/slap.5f0cd602.png": "/ambassadors_app/static/media/slap.5f0cd602.png",
+    "static/media/slap.e8c18156.gif": "/ambassadors_app/static/media/slap.e8c18156.gif",
+    "static/media/ufo.7145c8d4.png": "/ambassadors_app/static/media/ufo.7145c8d4.png",
+    "static/media/watermelon.3107bc5c.png": "/ambassadors_app/static/media/watermelon.3107bc5c.png",
+    "static/media/watermelon2.a817766c.png": "/ambassadors_app/static/media/watermelon2.a817766c.png",
+    "static/media/woman.cef3c4ff.png": "/ambassadors_app/static/media/woman.cef3c4ff.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88308532.js",
+    "static/css/2.6186f9e7.chunk.css",
+    "static/js/2.af2e5065.chunk.js",
+    "static/js/main.88e4cb20.chunk.js"
+  ]
+}
