@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Header from "../Header";
 import FirstStep from "./FirstStep";
-import SecondStep from "./SecondStep";
-import ThirdStep from "./ThirdStep";
+import SecondStepComponent from "./SecondStepComponent";
+
 import Instructions from "../Instructions";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
@@ -79,18 +79,12 @@ const StepsComponent = ({ classes, getUi }) => {
         </div>
       )}
       {Ui === "2" && (
-        <Row>
-          <Col>
-            <SecondStep classes={classes} handleSticker={handleSticker} />
-          </Col>
-          <Col
-            style={{ backgroundColor: "#191D21", borderRadius: "45px" }}
-            data-aos="fade-left"
-            data-aos-duration="2000"
-          >
-            <ThirdStep classes={classes} sticker={sticker} title={title} />
-          </Col>
-        </Row>
+        <SecondStepComponent
+          classes={classes}
+          handleSticker={handleSticker}
+          sticker={sticker}
+          title={title}
+        />
       )}
     </Container>
   );

@@ -30,9 +30,14 @@ const FourthStep = ({ classes, picture }) => {
               data-aos-duration="1000"
             />
             <h3
-              style={{ color: "blue" }}
+              style={{
+                color: "white",
+                fontFamily: "Raleway",
+                fontSize: "3rem",
+              }}
               data-aos="fade-left"
               data-aos-duration="1000"
+              data-aos-once="once"
             >
               {picture.title}
             </h3>
