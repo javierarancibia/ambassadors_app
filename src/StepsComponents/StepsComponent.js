@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../Header";
 import FirstStep from "./FirstStep";
 import SecondStepComponent from "./SecondStepComponent";
+import Selfie from "./images/selfie.png";
 
 import Instructions from "../Instructions";
 import { Container, Row, Col } from "react-bootstrap";
@@ -55,7 +56,7 @@ const StepsComponent = ({ classes, getUi }) => {
             <Col>
               <img
                 style={{ marginTop: "50rem" }}
-                src="images/selfie.png"
+                src={Selfie}
                 width="800"
                 height="360"
                 className="container mt-5 mx-auto d-block"
