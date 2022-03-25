@@ -46,11 +46,11 @@ const useStyles = createUseStyles((theme) => ({
     },
   },
   Stickers: {
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
     "& img": {
       height: "2rem",
-      hover: {
-        transform: "scale(1.5)",
-      },
     },
   },
   Gallery: {

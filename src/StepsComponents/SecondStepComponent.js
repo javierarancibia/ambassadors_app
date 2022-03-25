@@ -43,7 +43,7 @@ const SecondStepComponent = ({ classes, handleSticker, sticker, title }) => {
             <Col className="text-center mt-5 text-white">
               <img
                 src={Spinner}
-                width="400"
+                width="500"
                 style={{ marginRight: "3rem" }}
                 alt="Spinner"
               />

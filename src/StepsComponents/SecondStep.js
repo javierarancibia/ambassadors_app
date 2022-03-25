@@ -14,6 +14,10 @@ import logo13 from "./images/boy.png";
 import logo14 from "./images/pc.png";
 import logo15 from "./images/boy2.png";
 import logo16 from "./images/watermelon2.png";
+import logo17 from "./images/watermelon2.png";
+import logo18 from "./images/watermelon2.png";
+import logo19 from "./images/watermelon2.png";
+import logo20 from "./images/watermelon2.png";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,6 +42,10 @@ const SecondStep = ({ classes, handleSticker }) => {
     logo14,
     logo15,
     logo16,
+    logo17,
+    logo18,
+    logo19,
+    logo20,
   ];
   const stickers = imagesArray.map((url) => {
     const img = document.createElement("img");
@@ -61,14 +69,6 @@ const SecondStep = ({ classes, handleSticker }) => {
         >
           Choose-A-<span style={{ color: "red" }}>S</span>ticker
         </h1>
-        <p
-          style={{ fontFamily: "Raleway" }}
-          data-aos="fade-right"
-          data-aos-duration="2000"
-        >
-          Have you ever said something so dumb, you just wanted to slap
-          yourself? Well now you can!
-        </p>
       </header>
       <section className={classes.Stickers}>
         <Row data-aos="fade-right" data-aos-duration="2000">
