@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/ambassadors_app/static/js/main.88e4cb20.chunk.js",
-    "main.js.map": "/ambassadors_app/static/js/main.88e4cb20.chunk.js.map",
+    "main.js": "/ambassadors_app/static/js/main.b41f9c89.chunk.js",
+    "main.js.map": "/ambassadors_app/static/js/main.b41f9c89.chunk.js.map",
     "runtime-main.js": "/ambassadors_app/static/js/runtime-main.88308532.js",
     "runtime-main.js.map": "/ambassadors_app/static/js/runtime-main.88308532.js.map",
     "static/css/2.6186f9e7.chunk.css": "/ambassadors_app/static/css/2.6186f9e7.chunk.css",
@@ -24,6 +24,7 @@
     "static/media/eye.f473af7e.png": "/ambassadors_app/static/media/eye.f473af7e.png",
     "static/media/girl.91674359.png": "/ambassadors_app/static/media/girl.91674359.png",
     "static/media/pc.ceefe4a4.png": "/ambassadors_app/static/media/pc.ceefe4a4.png",
+    "static/media/selfie.ec30b725.png": "/ambassadors_app/static/media/selfie.ec30b725.png",
     "static/media/slap.5f0cd602.png": "/ambassadors_app/static/media/slap.5f0cd602.png",
     "static/media/slap.e8c18156.gif": "/ambassadors_app/static/media/slap.e8c18156.gif",
     "static/media/ufo.7145c8d4.png": "/ambassadors_app/static/media/ufo.7145c8d4.png",
@@ -35,6 +36,6 @@
     "static/js/runtime-main.88308532.js",
     "static/css/2.6186f9e7.chunk.css",
     "static/js/2.af2e5065.chunk.js",
-    "static/js/main.88e4cb20.chunk.js"
+    "static/js/main.b41f9c89.chunk.js"
   ]
 }
